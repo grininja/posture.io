@@ -3,6 +3,7 @@ function readURL(input) {
         var reader = new FileReader();
 
         reader.onload = function (e) {
+            console.log(e.target.result);
             document.querySelector('#blah')
                 .attr('src', e.target.result)
                 .width(150)
