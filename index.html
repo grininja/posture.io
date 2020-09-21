@@ -8,7 +8,10 @@
     <script src="index.js" defer></script>
 </head>
 <body>
-    <input type="file" onchange="readURL(this);"/>
-    <img id="blah" src="#" alt="your image" />
+    <div id="inputimage">
+        <input type="file" accept="image/*" onchange="loadFile(event)">
+        <img src="" alt="Image not Uploaded" id="output"/>    
+    </div>
+
 </body>
 </html>
